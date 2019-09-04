@@ -29,7 +29,7 @@ int main (int argc, char **argv) {
     	int name_len;
     	MPI_Get_processor_name(processor_name, &name_len);
 
-        fprintf (stdout, "Hello from %s, I am rank %d/%d\n", processor_name, myrank, size);
+        fprintf (stdout, "Hello from Singularity on %s, I am rank %d/%d\n", processor_name, myrank, size);
 
         MPI_Finalize();
 
